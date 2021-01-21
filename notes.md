@@ -1,0 +1,7 @@
+```SQL
+SELECT
+*
+FROM
+`project_id.database_id.table_id` FOR SYSTEM_TIME AS OF
+TIMESTAMP_SUB(CURRENT_TIMESTAMP(), INTERVAL 200 minute)
+```
