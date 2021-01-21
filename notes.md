@@ -2,9 +2,5 @@
 ###### BigQuery lets you use time travel to access data stored in BigQuery that has been changed or deleted. You can access the data from any point within the last seven days
 
 ```SQL
-SELECT
-*
-FROM
-`project_id.database_id.table_id` FOR SYSTEM_TIME AS OF
-TIMESTAMP_SUB(CURRENT_TIMESTAMP(), INTERVAL 200 minute)
+SELECT * FROM `project_id.database_id.table_id` FOR SYSTEM_TIME AS OF TIMESTAMP_SUB(CURRENT_TIMESTAMP(), INTERVAL 200 minute)
 ```
