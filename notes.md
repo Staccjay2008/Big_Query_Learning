@@ -1,4 +1,5 @@
-#### revert the table to old versions based on the timestamp.BigQuery lets you use time travel to access data stored in BigQuery that has been changed or deleted. You can access the data from any point within the last seven days
+##### Revert the table to old versions based on the timestamp.
+###### BigQuery lets you use time travel to access data stored in BigQuery that has been changed or deleted. You can access the data from any point within the last seven days
 
 ```SQL
 SELECT
