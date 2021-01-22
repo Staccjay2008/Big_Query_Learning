@@ -17,7 +17,7 @@ END;
 ```
 #### archive tables
 
-``SQL
+```SQL
 CREATE OR REPLACE PROCEDURE `project_id.database_id.table_id`()
 BEGIN
 
@@ -27,3 +27,4 @@ set curr_date = format_date ('%E4Y%m%d', current_date ());
 execute immediate
 concat("create or replace table `project_id.database_id.table_id_",curr_date,"`"," as select * from `project_id.database_id.table_id`");
 END;
+```
