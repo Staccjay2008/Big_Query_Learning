@@ -10,6 +10,7 @@ SELECT * FROM `project_id.database_id.table_id` FOR SYSTEM_TIME AS OF TIMESTAMP_
 ```SQL
 CREATE OR REPLACE PROCEDURE `project_id.database_id.table_id`()
 BEGIN
+
 -- declare variable_name data_type;
 -- set variable_name = (select ...);
 -- if variable_name < 5 then
