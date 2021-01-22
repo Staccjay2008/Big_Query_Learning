@@ -10,8 +10,11 @@ SELECT * FROM `project_id.database_id.table_id` FOR SYSTEM_TIME AS OF TIMESTAMP_
 ```SQL
 CREATE OR REPLACE PROCEDURE `project_id.database_id.table_id`()
 BEGIN
-
-create; insert; update; delete;
+-- declare variable_name data_type;
+-- set variable_name = (select ...);
+--if variable_name < 5 then
+--create; insert; update; delete;
+--end if;
 
 END;
 ```
@@ -21,8 +24,8 @@ END;
 CREATE OR REPLACE PROCEDURE `project_id.database_id.table_id`()
 BEGIN
 
-declare curr_date string; 
-set curr_date = format_date ('%E4Y%m%d', current_date ()); 
+declare curr_date string; -- declare variable_name data_type;
+set curr_date = format_date ('%E4Y%m%d', current_date ());  -- set variable_name = (select ...);
 
 execute immediate
 concat("create or replace table `project_id.database_id.table_id_",curr_date,"`"," as select * from `project_id.database_id.table_id`");
