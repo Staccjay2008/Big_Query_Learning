@@ -18,9 +18,7 @@ create; insert; update; delete;
 
 END;
 ```
-```link
-https://dwgeek.com/bigquery-control-flow-statements-if-loop-while.html/#:~:text=%5BELSE%20sql_statement_listn%5D%20END%20IF%3B,IF%20statement%20in%20BigQuery%20script.
-```
+[link to examples](https://dwgeek.com/bigquery-control-flow-statements-if-loop-while.html/#:~:text=%5BELSE%20sql_statement_listn%5D%20END%20IF%3B,IF%20statement%20in%20BigQuery%20script.)
 #### archive tables
 
 ```SQL
